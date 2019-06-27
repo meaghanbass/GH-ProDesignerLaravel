@@ -44,7 +44,7 @@
             <span>Welcome back, {{ Auth::user()->name }}!</span>
         </div>
 
-        <div class="col-md-11 pt-5 pb-5">
+        <div class="col-11 pt-5 pb-5">
             <div class="card card-shadow">
                 <div class="card-header d-flex justify-content-between"><span>Dashboard</span>
                 <span>
@@ -59,172 +59,311 @@
             </div>
         </div>
 
-        <div class="col-md-11">
-        <div class="page-header">
-            <h3 class="page-title">Resume Details</h3>
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">My Resume</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Details</li>
-                </ol>
-            </nav>
-        </div>
-        </div>
-
-        <div class="col-11 grid-margin stretch-card">
-            <div class="card card-shadow">
-            <div class="card-body">
-                <h4 class="card-title pb-3">Contact Info</h4>
-                <form class="form-sample">
-                <div class="row">
-                    <div class="col-xl-6">
-                    <div class="form-group row">
-                        <label class="col-sm-3 col-form-label">First Name</label>
-                        <div class="col-sm-9">
-                        <input type="text" class="form-control" />
-                        </div>
-                    </div>
-                    </div>
-                    <div class="col-xl-6">
-                    <div class="form-group row">
-                        <label class="col-sm-3 col-form-label">Last Name</label>
-                        <div class="col-sm-9">
-                        <input type="text" class="form-control" />
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xl-6">
-                    <div class="form-group row">
-                        <label class="col-sm-3 col-form-label">Phone</label>
-                        <div class="col-sm-9">
-                        <input type="text" class="form-control" placeholder="xxx-xx-xxxx"/>
-                        </div>
-                    </div>
-                    </div>
-                    <div class="col-xl-6">
-                    <div class="form-group row">
-                        <label class="col-sm-3 col-form-label">Email</label>
-                        <div class="col-sm-9">
-                        <input class="form-control" placeholder="johndoe@gmail.com"/>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xl-6">
-                    <div class="form-group row">
-                        <label class="col-sm-3 col-form-label">Location</label>
-                        <div class="col-sm-9">
-                        <input type="text" class="form-control" placeholder="City, State"/>
-                        </div>
-                    </div>
-                    </div>
-                    <div class="col-xl-6">
-                        <div class="form-group row">
-                        <label class="col-sm-3 col-form-label">Website</label>
-                        <div class="col-sm-9">
-                            <input type="text" class="form-control" />
-                        </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-xl-6">
-                    <div class="form-group row">
-                        <label class="col-sm-3 col-form-label">LinkedIn</label>
-                        <div class="col-sm-9">
-                        <input type="text" class="form-control" />
-                        </div>
-                    </div>
-                    </div>
-                    <div class="col-xl-6">
-                        <div class="form-group row">
-                        <label class="col-sm-3 col-form-label">Github</label>
-                        <div class="col-sm-9">
-                            <input type="text" class="form-control" />
-                        </div>
-                        </div>
-                    </div>
-                </div>                    
-                
-                </form>
-            </div>
+        <div class="col-11">
+            <div class="page-header">
+                <h3 class="page-title">Resume Details</h3>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb card-shadow">
+                        <li class="breadcrumb-item"><a href="#">My Resume</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Details</li>
+                    </ol>
+                </nav>
             </div>
         </div>
 
+        <!-- Contact Info Inputs -->
         <div class="col-11 grid-margin stretch-card">
             <div class="card card-shadow">
                 <div class="card-body">
-                    <h4 class="card-title">Profession Details</h4>
-                    <p class="card-description">Job #1</p>
+                    <h4 class="card-title pb-3">Contact Info</h4>
                     <form class="form-sample">
-                    <div class="row">
-                        <div class="col-xl-6">
+                        <div class="row">
+                            <div class="col-xl-6">
                             <div class="form-group row">
-                                <label class="col-sm-3 col-form-label">Job Title</label>
+                                <label class="col-md-3 col-form-label">First Name</label>
+                                <div class="col-md-9">
+                                <input type="text" class="form-control" />
+                                </div>
+                            </div>
+                            </div>
+                            <div class="col-xl-6">
+                            <div class="form-group row">
+                                <label class="col-md-3 col-form-label">Last Name</label>
+                                <div class="col-md-9">
+                                <input type="text" class="form-control" />
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-6">
+                            <div class="form-group row">
+                                <label class="col-md-3 col-form-label">Phone</label>
+                                <div class="col-md-9">
+                                <input type="text" class="form-control" placeholder="xxx-xx-xxxx"/>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="col-xl-6">
+                            <div class="form-group row">
+                                <label class="col-md-3 col-form-label">Email</label>
+                                <div class="col-md-9">
+                                <input class="form-control" placeholder="johndoe@gmail.com"/>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-6">
+                            <div class="form-group row">
+                                <label class="col-md-3 col-form-label">Location</label>
+                                <div class="col-md-9">
+                                <input type="text" class="form-control" placeholder="City, State"/>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="form-group row">
+                                <label class="col-md-3 col-form-label">Website</label>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control" />
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xl-6">
+                            <div class="form-group row">
+                                <label class="col-sm-3 col-form-label">LinkedIn</label>
                                 <div class="col-sm-9">
                                 <input type="text" class="form-control" />
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-6">
-                        <div class="form-group row">
-                            <label class="col-sm-3 col-form-label">Company</label>
-                            <div class="col-sm-9">
-                            <input type="text" class="form-control" />
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xl-6">
-                        <div class="form-group row">
-                            <label class="col-sm-3 col-form-label">Start Date</label>
-                            <div class="col-sm-9">
-                            <input type="text" class="form-control" placeholder="dd/mm/yyyy"/>
+                            <div class="col-xl-6">
+                                <div class="form-group row">
+                                <label class="col-sm-3 col-form-label">Github</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" />
+                                </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-6">
-                        <div class="form-group row">
-                            <label class="col-sm-3 col-form-label">End Date</label>
-                            <div class="col-sm-9">
-                            <input class="form-control" placeholder="dd/mm/yyyy"/>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xl-6">
-                        <div class="form-group row">
-                            <label class="col-sm-3 col-form-label">Location</label>
-                            <div class="col-sm-9">
-                            <input type="text" class="form-control" placeholder="City, State"/>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-xl-6">
-                        <div class="form-group row">
-                            <label class="col-sm-3 col-form-label">LinkedIn</label>
-                            <div class="col-sm-9">
-                            <input type="text" class="form-control" />
-                            </div>
-                        </div>
-                    </div>
+                        </div>                    
                     
-                </div>                    
-
-                </form>
+                    </form>
+                </div>
             </div>
         </div>
+
+        <!-- Professional Details Inputs -->
+        <div class="col-11 grid-margin stretch-card">
+            <div class="card card-shadow">
+                <div class="card-body">
+                    <h4 class="card-title">Professional Details</h4>
+                    <p class="card-description">Job #1</p>
+                    <form class="form-sample">
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Job Title</label>
+                                    <div class="col-md-9">
+                                        <input type="text" class="form-control" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Company</label>
+                                    <div class="col-md-9">
+                                    <input type="text" class="form-control" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Start Date</label>
+                                    <div class="col-md-9">
+                                        <input id="example-date-input" class="form-control" type="date">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">End Date</label>
+                                    <div class="col-md-9">
+                                        <input id="example-date-input" class="form-control" type="date">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Location</label>
+                                    <div class="col-md-9">
+                                    <input type="text" class="form-control" placeholder="City, State"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Tools & Technologies</label>
+                                    <div class="col-md-9">
+                                    <input type="text" class="form-control"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="form-group row">
+                                    <label class="col-sm-6 col-form-label">Description</label>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-sm-12">
+                                        <textarea type="text" class="form-control" rows="4"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="form-group row">
+                                    <label class="col-md-6 col-form-label">Bullet Points</label>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-10">
+                                        <textarea type="text" class="form-control" rows="1"></textarea>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <button class="btn btn-lg btn-dark"><i class="fas fa-plus text-white"></i>&nbsp; &nbsp; Add</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                     
+                    </form>
+                    <button class="btn btn-lg btn-dark mt-3 float-right"><i class="fas fa-plus text-white"></i>&nbsp; &nbsp; Add Another Job</button>
+                </div>
+            </div>
         </div>
 
+        <!-- Project Details Inputs -->
+        <div class="col-11 grid-margin stretch-card">
+            <div class="card card-shadow">
+                <div class="card-body">
+                    <h4 class="card-title">Project Details</h4>
+                    <p class="card-description">Project #1</p>
+                    <form class="form-sample">
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Project Title</label>
+                                    <div class="col-md-9">
+                                        <input type="text" class="form-control" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Tools & Technologies</label>
+                                    <div class="col-md-9">
+                                        <input type="text" class="form-control" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Github Link</label>
+                                    <div class="col-md-9">
+                                    <input type="text" class="form-control" placeholder="https://github.com/repository"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Direct Link</label>
+                                    <div class="col-md-9">
+                                    <input class="form-control" placeholder="https://directlink.com"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="form-group row">
+                                    <label class="col-sm-6 col-form-label">Description</label>
+                                    
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-sm-12">
+                                        <textarea type="text" class="form-control"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                  
+                    </form>
+                    <button class="btn btn-lg btn-dark mt-3 float-right"><i class="fas fa-plus text-white"></i>&nbsp; &nbsp; Add Another Project</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Education Details Inputs -->
+        <div class="col-11 grid-margin stretch-card">
+            <div class="card card-shadow">
+                <div class="card-body">
+                    <h4 class="card-title">Education Details</h4>
+                    <p class="card-description">Education #1</p>
+                    <form class="form-sample">
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">School</label>
+                                    <div class="col-md-9">
+                                        <input type="text" class="form-control" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Area(s) of Study</label>
+                                    <div class="col-md-9">
+                                        <input type="text" class="form-control" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>   
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Start Date</label>
+                                    <div class="col-md-9">
+                                        <input id="example-date-input" class="form-control" type="date">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">End Date</label>
+                                    <div class="col-md-9">
+                                        <input id="example-date-input" class="form-control" type="date">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>              
+                    </form>
+                    <button class="btn btn-lg btn-dark mt-3 float-right"><i class="fas fa-plus text-white"></i>&nbsp; &nbsp; Add Another Education</button>
+                </div>
+            </div>
+        </div>
+    
     </div>
 </div>
 @endsection

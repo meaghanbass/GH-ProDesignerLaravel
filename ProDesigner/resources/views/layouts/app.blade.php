@@ -15,14 +15,25 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+
+
+    <!-- Bootstrap -->
+    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+    
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark shadow-sm">
-            <div class="container">
+        <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark" style="height:70px;">
+            <div class="container-fluid pl-5 pr-5">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     ProDesigner &nbsp;&nbsp;
                     <img src="/svg/logo.svg" alt="ProDesigner" width="30px">
@@ -50,15 +61,16 @@
                                 </li>
                             @endif
                         @else
+                            <img src="/images/user.png" alt="profile" width="32px" height="32px" class="mt-1">
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }} <span class="caret"></span>
+                                    {{ Auth::user()->name }} <i class="material-icons" style="vertical-align: middle;color:white;">expand_more</i>
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
+                                        onclick="event.preventDefault();
+                                            document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>
 
@@ -69,13 +81,19 @@
                             </li>
                         @endguest
                     </ul>
+
                 </div>
             </div>
         </nav>
 
-        <main class="py-4">
+        
+
+
+
+        <main class="py-4" style="padding-bottom:0 !important;">
             @yield('content')
         </main>
     </div>
+
 </body>
 </html>

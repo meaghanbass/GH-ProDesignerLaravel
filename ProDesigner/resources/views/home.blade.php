@@ -7,35 +7,35 @@
 
 <div class="container-fluid page-body-wrapper">
     <nav class="sidebar bg-dark" id="sidebar">
-    <ul class="nav">
-        <li class="nav-item nav-profile">
-        <a href="#" class="nav-link">
-            <div class="nav-profile-image">
-            <img src="/images/user.png" alt="profile">
-            </div>
-            <div class="nav-profile-text d-flex flex-column">
-            <span class="font-weight-bold mb-2">{{ Auth::user()->name }}</span>
-            <span class="text-secondary text-small">Software Developer</span>
-            </div>
-        </a>
-        </li>
-        <li class="nav-item active">
-        <a class="nav-link d-flex justify-content-between" href="index.html">
-            <span class="menu-title text-dark">My Profile</span>
-            <i class="fas fa-home text-dark"></i>
-        </a>
-        </li>
+        <ul class="nav">
+            <li class="nav-item nav-profile">
+                <a href="#" class="nav-link">
+                    <div class="nav-profile-image">
+                    <img src="/images/user.png" alt="profile">
+                    </div>
+                    <div class="nav-profile-text d-flex flex-column">
+                    <span class="font-weight-bold mb-2">{{ Auth::user()->name }}</span>
+                    <span class="text-secondary text-small">Software Developer</span>
+                    </div>
+                </a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link d-flex justify-content-between" href="index.html">
+                    <span class="menu-title text-dark">My Profile</span>
+                    <i class="fas fa-home text-dark"></i>
+                </a>
 
-        <li class="nav-item sidebar-actions">
-        <span class="nav-link">
-            <div class="border-bottom">
-            <h6 class="font-weight-normal mb-3">Projects</h6>                
-            </div>
-            <button class="btn btn-block btn-lg btn-light mt-4">+ Add a project</button>
+            </li>
 
-        </span>
-        </li>
-    </ul>
+            <li class="nav-item sidebar-actions">
+            <span class="nav-link">
+                <div class="border-bottom">
+                <h6 class="font-weight-normal mb-3">Projects</h6>                
+                </div>
+                <button class="btn btn-block btn-lg btn-light mt-4">+ Add a project</button>
+            </span>
+            </li>
+        </ul>
     </nav>
     <div class="container-scrollbar">
     <div class="row justify-content-center">
@@ -44,7 +44,7 @@
             <span>Welcome back, {{ Auth::user()->name }}!</span>
         </div>
 
-        <div class="col-11 pt-5 pb-5">
+        <div class="col-11 pt-4 pb-5">
             <div class="card card-shadow">
                 <div class="card-header d-flex justify-content-between"><span>Dashboard</span>
                 <span>
@@ -246,6 +246,7 @@
                             </div>
                         </div>                     
                     </form>
+                    <div class="dropdown-divider"></div>
                     <button class="btn btn-lg btn-dark mt-3 float-right"><i class="fas fa-plus text-white"></i>&nbsp; &nbsp; Add Another Job</button>
                 </div>
             </div>
@@ -310,6 +311,7 @@
                             </div>
                         </div>                  
                     </form>
+                    <div class="dropdown-divider"></div>
                     <button class="btn btn-lg btn-dark mt-3 float-right"><i class="fas fa-plus text-white"></i>&nbsp; &nbsp; Add Another Project</button>
                 </div>
             </div>
@@ -331,6 +333,22 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Degree</label>
+                                    <div class="col-md-9">
+                                    <select class="custom-select">
+                                        <option selected>Select degree...</option>
+                                        <option value="1">Associate's Degree</option>
+                                        <option value="2">Bachelor's Degree</option>
+                                        <option value="3">Master's Degree</option>
+                                        <option value="4">Ph.D.</option>
+                                    </select>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="col-xl-6">
                                 <div class="form-group row">
                                     <label class="col-md-3 col-form-label">Area(s) of Study</label>
@@ -339,7 +357,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>   
+                        </div>      
                         <div class="row">
                             <div class="col-xl-6">
                                 <div class="form-group row">
@@ -359,7 +377,80 @@
                             </div>
                         </div>              
                     </form>
+                    <div class="dropdown-divider"></div>
                     <button class="btn btn-lg btn-dark mt-3 float-right"><i class="fas fa-plus text-white"></i>&nbsp; &nbsp; Add Another Education</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Certifications Details Inputs -->
+        <div class="col-11 grid-margin stretch-card">
+            <div class="card card-shadow">
+                <div class="card-body">
+                    <h4 class="card-title">Professional Certifications Details</h4>
+                    <p class="card-description">Certificate #1</p>
+                    <form class="form-sample">
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Organization</label>
+                                    <div class="col-md-9">
+                                        <input type="text" class="form-control" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Name of Certification</label>
+                                    <div class="col-md-9">
+                                        <input type="text" class="form-control" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>   
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Issue Date</label>
+                                    <div class="col-md-9">
+                                        <input id="example-date-input" class="form-control" type="date">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Expiration Date</label>
+                                    <div class="col-md-9">
+                                        <input id="example-date-input" class="form-control" type="date">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>              
+                    </form>
+                    <div class="dropdown-divider"></div>
+                    <button class="btn btn-lg btn-dark mt-3 float-right"><i class="fas fa-plus text-white"></i>&nbsp; &nbsp; Add Another Certification</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skills Inputs -->
+        <div class="col-11 grid-margin stretch-card">
+            <div class="card card-shadow">
+                <div class="card-body">
+                    <h4 class="card-title">Skills</h4>
+                    <form class="form-sample">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-group row">
+                                    <div class="col-md-12">
+                                        <input class="col-md-12 form-control" type="text" value="" data-role="tagsinput" placeholder="Enter skills..."/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="dropdown-divider"></div>
+                    <button class="btn btn-lg btn-dark mt-3 float-right"><i class="fas fa-plus text-white"></i>&nbsp; &nbsp; Add Another Certification</button>
                 </div>
             </div>
         </div>

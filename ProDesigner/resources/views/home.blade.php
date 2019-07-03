@@ -449,12 +449,9 @@
                             </div>
                         </div>
                     </form>
-                    <div class="dropdown-divider"></div>
-                    <button class="btn btn-lg btn-dark mt-3 float-right"><i class="fas fa-plus text-white"></i>&nbsp; &nbsp; Add Another Certification</button>
                 </div>
             </div>
         </div>
-    
     </div>
 </div>
 @endsection
